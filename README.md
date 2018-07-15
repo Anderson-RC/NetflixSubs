@@ -1,77 +1,42 @@
-# Netflix Plugin for Kodi 18 (plugin.video.netflix)
-
-[![Bitcoin donate button](https://img.shields.io/badge/bitcoin-donate-yellow.svg)](https://blockchain.info/address/1DHGftMkFXXsDY7UnqQuatWwxQzKVu88sF)
-[![Build Status](https://travis-ci.org/asciidisco/plugin.video.netflix.svg?branch=master)](https://travis-ci.org/asciidisco/plugin.video.netflix)
-[![Test Coverage](https://codeclimate.com/github/asciidisco/plugin.video.netflix/badges/coverage.svg)](https://codeclimate.com/github/asciidisco/plugin.video.netflix/coverage)
-[![Issue Count](https://codeclimate.com/github/asciidisco/plugin.video.netflix/badges/issue_count.svg)](https://codeclimate.com/github/asciidisco/plugin.video.netflix)
-[![Code Climate](https://codeclimate.com/github/asciidisco/plugin.video.netflix/badges/gpa.svg)](https://codeclimate.com/github/asciidisco/plugin.video.netflix)
-[![GitHub release](https://img.shields.io/github/release/asciidisco/plugin.video.netflix.svg)](https://github.com/asciidisco/plugin.video.netflix/releases)
-[![Docs](https://media.readthedocs.org/static/projects/badges/passing.svg)](https://asciidisco.github.io/plugin.video.netflix/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# NetflixSubs Plugin for Kodi 18 (plugin.video.netflixsubs)
 
 ## Disclaimer
 
 This plugin is not officially commisioned/supported by Netflix.
 The trademark "Netflix" is registered by "Netflix, Inc."
+This plugin is a modification of the original [Netflix plugin for Kodi](https://github.com/asciidisco/plugin.video.netflix) which automatically saves SRT subtitles to a file on your PC. 
 
-## Prerequisites
+## Installation
 
-- Kodi 18 [nightlybuild](http://mirrors.kodi.tv/nightlies/)
-- Inputstream.adaptive [>=v2.0.0](https://github.com/peak3d/inputstream.adaptive)
-  (should be included in your Kodi 18 installation)
-- Libwidevine >=1.4.8.970 (for non Android devices)
+Install the latest Kodi 18 [nightlybuild](http://mirrors.kodi.tv/nightlies/) using Full Installation option. Then launch Kodi.
 
-Note: The link to download the Widevine Libary for none ARM Systems can be
-found in the [Firefox Sources](https://hg.mozilla.org/mozilla-central/raw-file/31465a03c03d1eec31cd4dd5d6b803724dcb29cd/toolkit/content/gmp-sources/widevinecdm.json)
-& needs to be placed in the `cdm` folder in [special://home](http://kodi.wiki/view/Special_protocol).
+Go to: Settings > Add ons > Install from zip file
 
-Please make sure to read the licence agreement that comes with it,
-so you know what you´re getting yourself into.
+You will get a popup window saying that installing from unknown sources is disabled. Click the “settings” button, Enable “unknown sources” and then click “yes”.
 
-## Installation & Updates
+Return to “install from zip file” and select the NetflixSubs plugin.
 
-You can use
-[our repository](https://github.com/kodinerds/repo/raw/master/repository.netflix/repository.netflix-1.0.1.zip)
-to install plugin.
-Using this, you´ll immediately receive updates once a
-new release has been drafted.
+If you use Netflix in a language other than English, go to settings > interface > Skin > fonts > Arial based.
 
-Further installations instructions can be found in the [Wiki](https://github.com/asciidisco/plugin.video.netflix/wiki)
+Return to the Kodi main screen, and select Add-ons, and you should see the NetflixSubs addon listed there. Click to launch, or right-click to access the settings menu.
 
-## FAQ
+Further instructions and discussion can be found at http://www.nihongonobaka.com/download-japanese-subtitles-as-text-from-netflix-using-a-kodi-plugin/
 
-- [Does it work with Kodi 17](https://github.com/asciidisco/plugin.video.netflix/issues/25)
-- [Does it work on a RPI](https://github.com/asciidisco/plugin.video.netflix/issues/28)
-- [Which video resolutions are supported](https://github.com/asciidisco/plugin.video.netflix/issues/27)
-- [Can it play 4k Videos](https://github.com/asciidisco/plugin.video.netflix/issues/86)
+## Usage
 
-## Functionality
+Log in using your Netflix username and password, and then select a show or movie to play. 
 
-- Multiple profiles
-- Search Netflix (incl. suggestions)
-- Netflix categories, recommendations, "my list" & continue watching
-- Rate show/movie
-- Add & remove to/from "my list"
-- Export of complete shows & movies in local database
+The first time you try to play something, you will be prompted to enable InputStream helper and install WideVine. Just follow the prompts.
 
-## Something doesn't work
+When you attempt to play a video, the subtitle files will automatically be written to disk, along with a file named Subtitle_Urls.txt which includes a list of all available subtitle streams for the most recently played video, and the language codes for each.
 
-If something doesn't work for you, please:
+You can specify where you want to save the subtitle files within the plugin settings. You can also specify if you only want to download subtitles with a specific language code.
 
-- Make sure all prerequisites are met
-- Enable verbose logging in the plugin settings
-- Enable the Debug log in you Kodi settings
-- Open an issue with a titles that summarises your problems
+## Subtitle Availability (Why isn't the language I want available?)
 
-## Donate
+When you normally view Netflix through your PC, TV, or other device, you may have access to a wide variety of subtitles, some of which can be enabled simply by changing the your language within the Netflix settings.
 
-If you like this project feel free to buy us some cups of coffee.
-Our bitcoin address is: `1DHGftMkFXXsDY7UnqQuatWwxQzKVu88sF`
-
-## Code of Conduct
-
-[Contributor Code of Conduct](Code_of_Conduct.md)
-By participating in this project you agree to abide by its terms.
+When using the Kodi NetflixSubs plugin, you may find that your available subtitles are different than what you can normally access. This is because Netflix ONLY takes your location into account when using this plugin. If you have tested multiple different videos and can not find the language that you want, then you may need to use a VPN from a country where that language is used. It may be difficult to find a working VPN, because Netflix actively attempts to block them, but this may be the only way to obtain foreign language subtitles in some cases.
 
 ## Licence
 
