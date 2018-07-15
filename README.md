@@ -9,9 +9,9 @@ This plugin is based on the original [Netflix plugin for Kodi](https://github.co
 
 ## Installation
 
-Install the latest Kodi 18 [nightlybuild](http://mirrors.kodi.tv/nightlies/) using Full Installation option. Then launch Kodi.
-
 Download the latest Source Code ZIP file of the NetflixSubs plugin from the [releases page](https://github.com/Zarxrax/NetflixSubs/releases)
+
+Install the latest Kodi 18 [nightlybuild](http://mirrors.kodi.tv/nightlies/) using Full Installation option. Then launch Kodi.
 
 Go to: Settings > Add ons > Install from zip file
 
