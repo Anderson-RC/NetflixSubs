@@ -4,7 +4,8 @@
 
 This plugin is not officially commisioned/supported by Netflix.
 The trademark "Netflix" is registered by "Netflix, Inc."
-This plugin is a modification of the original [Netflix plugin for Kodi](https://github.com/asciidisco/plugin.video.netflix) which automatically saves SRT subtitles to a file on your PC. 
+
+This plugin is based on the original [Netflix plugin for Kodi](https://github.com/asciidisco/plugin.video.netflix) and has been modified to automatically save SRT subtitles to a file on your PC. 
 
 ## Installation
 
