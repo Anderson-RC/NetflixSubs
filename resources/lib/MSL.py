@@ -43,6 +43,7 @@ class MSL(object):
     last_drm_context = ''
     last_playback_context = ''
     current_message_id = 0
+    sequence_number = 0
     session = requests.session()
     rndm = random.SystemRandom()
     tokens = []
